@@ -16,5 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="PadContent.cs" />
   </ItemGroup>
 </Project>
