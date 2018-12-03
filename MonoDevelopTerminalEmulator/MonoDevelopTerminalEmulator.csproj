@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoDevelop.Addins" Version="0.4.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="vte-sharp.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="vte-sharp">
+      <HintPath>..\vte-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addin id="MonoDevelop.Terminal.Emulato" 
+       namespace="MonoDevelopTerminalEmulator" 
+       name="Terminal Emulator"
+       author="David Tavarez" 
+       copyright="APL 2.0" 
+       url="http://davidtavarez.github.io" 
+       description="Open a Terminal inside the IDE" 
+       category="IDE extensions"
+       version="1.0">
+
+    <Runtime>
+        <Import assembly="vte-sharp.dll" />
+    </Runtime>
+    <Extension path="/MonoDevelop/Ide/Pads">
+        <Pad id="MonoDevelop.Terminal.Emulator"
+             defaultLayout="*"
+             defaultPlacement="Center Bottom"
+             defaultStatus="AutoHide"
+             icon="md-console"
+             class="MonoDevelopTerminalEmulator.TerminalEmulatorPad"
+             _label="Terminal" />
+    </Extension>
+</Addin>
